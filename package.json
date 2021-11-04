@@ -1,9 +1,9 @@
 {
-  "name": "@rweich/streamdeck-ts-template",
+  "name": "@patricklecuyer/streamdeck-rcon",
   "version": "0.0.0-development",
-  "description": "a template to create streamdeck plugins in typescript",
+  "description": "Streamdeck plugin to interact with game servers via RCon",
   "private": true,
-  "author": "rweich",
+  "author": "patricklecuyer",
   "license": "MIT",
   "scripts": {
     "build": "yarn clean && webpack --mode=development",
