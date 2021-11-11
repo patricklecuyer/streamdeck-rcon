@@ -6,6 +6,45 @@
 
 <div class="sdpi-wrapper">
 
-  <!-- @see https://developer.elgato.com/documentation/stream-deck/sdk/property-inspector/ -->
+<div class="sdpi-item">
+  <div class="sdpi-item-label">Server Address</div>
+  <input class="sdpi-item-value" id="host" value="127.0.0.1" required>
+</div>
+<div class="sdpi-item">
+  <div class="sdpi-item-label">Server Port</div>
+  <input class="sdpi-item-value" id="port" value="25575" required>
+</div>
+
+<div type="radio" class="sdpi-item" id="protocol">
+  <div class="sdpi-item-label">Protocol</div>
+  <div class="sdpi-item-value ">
+      <span class="sdpi-item-child">
+          <input id="tcp" type="radio" value="tcp" name="rdio" checked >
+          <label for="tcp" class="sdpi-item-label"><span></span>tcp</label>
+      </span>
+      <span class="sdpi-item-child">
+          <input id="udp" type="radio" value="udp" name="rdio">
+          <label for="udp" class="sdpi-item-label"><span></span>UDP</label>
+      </span>
+  </div>
+</div>
+
+<div type="checkbox" class="sdpi-item">
+  <div class="sdpi-item-label">Challenge </div>
+  <input class="sdpi-item-value" id="challenge" type="checkbox" value="challenge">
+  <label for="challenge"><span></span></label>
+</div>
+
+
+<div class="sdpi-item">
+    <div class="sdpi-item-label">RCON Password</div>
+    <input type="password" class="sdpi-item-value" id="password" value="" required>
+</div>
+
+<div type="textarea" class="sdpi-item" id="rcon_command">
+  <div class="sdpi-item-label">RCON Command</div>
+  <span class="sdpi-item-value textarea">
+      <textarea type="textarea" id="rcon_command"></textarea>
+  </span>
 
 </div>
